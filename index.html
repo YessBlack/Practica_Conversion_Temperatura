@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Herramienta Técnica</h1>
+    <p>Conversión Térmica de Precisión</p>
+    <p>
+      Calcule instantáneamente equivalencias entre escalas Celsius, Fahrenheit y Kelvin con precisión decimal para
+      aplicaciones industriales y científicas.
+    </p>
+  </header>
+
+  <main class="main">
+
+    <section class="container">
+      <form class="form">
+        <div class="group">
+          <label for="temperatura">GRADOS CELSIUS (°C)</label>
+          <input id="temperatura" type="text" placeholder="10">
+        </div>
+        <button type="button" class="button" id="btnConvertir">
+          Convertir Ahora
+        </button>
+        <button type="button" class="clear" id="btnClear">
+          Limpiar
+        </button>
+      </form>
+
+      <div class="cards">
+        <article class="card">
+          <h2>Fahrenheit</h2>
+          <p>Escala Imperial</p>
+          <div>
+            <span id="fahrenheit">--</span>
+            <span>°F</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Fahrenheit</h2>
+          <p>Escala Imperial</p>
+          <div>
+            <span id="kelvin">--</span>
+            <span>°K</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
